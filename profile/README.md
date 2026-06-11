@@ -9,21 +9,21 @@ Verstuur welkomstmails, facturen, wachtwoordresets en meer — via één REST AP
 
 | Taal | Repo | Installatie |
 |------|------|-------------|
-| **Node.js / TypeScript** | [wesender-node](https://github.com/nljerry/wesender-node) | `npm install @nljerry/wesender-node` |
-| **Python** | [wesender-python](https://github.com/nljerry/wesender-python) | `pip install wesender` |
-| **PHP** | [wesender-php](https://github.com/nljerry/wesender-php) | `composer require wesender/wesender` |
-| **Go** | [wesender-go](https://github.com/nljerry/wesender-go) | `go get github.com/nljerry/wesender-go` |
-| **Ruby** | [wesender-ruby](https://github.com/nljerry/wesender-ruby) | `gem install wesender` |
-| **Rust** | [wesender-rust](https://github.com/nljerry/wesender-rust) | `cargo add wesender` |
-| **Java** | [wesender-java](https://github.com/nljerry/wesender-java) | `nl.wesender:wesender-java:1.0.0` |
-| **.NET / C#** | [wesender-dotnet](https://github.com/nljerry/wesender-dotnet) | `dotnet add package Wesender` |
-| **Elixir** | [wesender-elixir](https://github.com/nljerry/wesender-elixir) | `{:wesender, "~> 1.0"}` |
-| **CLI** | [wesender-cli](https://github.com/nljerry/wesender-cli) | `npm install -g @nljerry/wesender-cli` |
+| **Node.js / TypeScript** | [wesender-node](https://github.com/wesender/wesender-node) | `npm install @wesender/wesender-node` |
+| **Python** | [wesender-python](https://github.com/wesender/wesender-python) | `pip install wesender` |
+| **PHP** | [wesender-php](https://github.com/wesender/wesender-php) | `composer require wesender/wesender` |
+| **Go** | [wesender-go](https://github.com/wesender/wesender-go) | `go get github.com/wesender/wesender-go` |
+| **Ruby** | [wesender-ruby](https://github.com/wesender/wesender-ruby) | `gem install wesender` |
+| **Rust** | [wesender-rust](https://github.com/wesender/wesender-rust) | `cargo add wesender` |
+| **Java** | [wesender-java](https://github.com/wesender/wesender-java) | `nl.wesender:wesender-java:1.0.0` |
+| **.NET / C#** | [wesender-dotnet](https://github.com/wesender/wesender-dotnet) | `dotnet add package Wesender` |
+| **Elixir** | [wesender-elixir](https://github.com/wesender/wesender-elixir) | `{:wesender, "~> 1.0"}` |
+| **CLI** | [wesender-cli](https://github.com/wesender/wesender-cli) | `npm install -g @wesender/wesender-cli` |
 
 ## Snel aan de slag
 
 ```typescript
-import { Wesender } from "@nljerry/wesender-node"
+import { Wesender } from "@wesender/wesender-node"
 
 const ws = new Wesender(process.env.WS_API_KEY!)
 
@@ -39,7 +39,7 @@ await ws.emails.send({
 
 ```bash
 # Installeren
-npm install -g @nljerry/wesender-cli
+npm install -g @wesender/wesender-cli
 
 # Configureren
 wesender config set-key ws_live_...
